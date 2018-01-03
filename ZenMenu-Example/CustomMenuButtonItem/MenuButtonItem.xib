@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MenuButtonItem" customModule="ZenMenu_Example" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="92"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2SL-Kp-3Us">
+                    <rect key="frame" x="52" y="0.0" width="46" height="46"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBC-rH-gFn">
+                            <rect key="frame" x="7" y="7" width="32.5" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="NBC-rH-gFn" secondAttribute="height" multiplier="1:1" id="qff-ES-Dmt"/>
+                            </constraints>
+                            <state key="normal" image="Full"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="2SL-Kp-3Us" secondAttribute="height" multiplier="1:1" id="AEX-56-rCK"/>
+                        <constraint firstItem="NBC-rH-gFn" firstAttribute="centerY" secondItem="2SL-Kp-3Us" secondAttribute="centerY" id="Frf-Du-vGG"/>
+                        <constraint firstItem="NBC-rH-gFn" firstAttribute="height" secondItem="2SL-Kp-3Us" secondAttribute="height" multiplier="7:10" id="O4A-zS-44g"/>
+                        <constraint firstItem="NBC-rH-gFn" firstAttribute="centerX" secondItem="2SL-Kp-3Us" secondAttribute="centerX" id="c5S-0U-xnf"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Circle" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30E-iy-GE5">
+                    <rect key="frame" x="16" y="46" width="118" height="46"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                    <color key="textColor" red="0.31764705879999999" green="0.31764705879999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="30E-iy-GE5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="59G-0X-C41"/>
+                <constraint firstItem="2SL-Kp-3Us" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7K7-lT-8hF"/>
+                <constraint firstItem="30E-iy-GE5" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1:2" id="CSk-sa-1xL"/>
+                <constraint firstAttribute="bottom" secondItem="30E-iy-GE5" secondAttribute="bottom" id="I2r-J8-aMt"/>
+                <constraint firstItem="30E-iy-GE5" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="118:150" id="VQT-lz-Xr2"/>
+                <constraint firstItem="2SL-Kp-3Us" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1:2" id="tMn-qx-m3z"/>
+                <constraint firstItem="2SL-Kp-3Us" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xph-Nd-c31"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconBackground" destination="2SL-Kp-3Us" id="IIK-8E-SVE"/>
+                <outlet property="iconButton" destination="NBC-rH-gFn" id="neU-lJ-RfW"/>
+                <outlet property="titleLabel" destination="30E-iy-GE5" id="sON-un-EWv"/>
+            </connections>
+            <point key="canvasLocation" x="65" y="-70"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Full" width="42" height="42"/>
+    </resources>
+</document>

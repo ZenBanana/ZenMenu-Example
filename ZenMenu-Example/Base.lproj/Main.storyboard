@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sz4-af-LvQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="vWH-0e-l3S">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="sz4-af-LvQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cMf-nB-5YK">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3oe-eY-Uwl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MBB-mE-g35" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-714" y="134"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZenMenu_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZenMenu Example" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpO-LX-nko">
+                                <rect key="frame" x="112.5" y="84" width="151" height="20.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.078431372550000003" green="0.15686274510000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a demonstration of how to implement ZenMenu. Select the type of ZenMenu you wish to demonstrate." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlU-Vt-hqG">
+                                <rect key="frame" x="32" y="112.5" width="311" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.078431372550000003" green="0.15686274510000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myU-Ch-iab">
+                                <rect key="frame" x="64" y="328.5" width="247" height="30"/>
+                                <color key="backgroundColor" red="0.52549019607843139" green="0.82745098039215681" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Half Circle">
+                                    <color key="titleColor" red="0.078431372550000003" green="0.15686274510000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="halfCircleButtonSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cEO-pm-ngo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egq-lx-tw3">
+                                <rect key="frame" x="64" y="290" width="247" height="30"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.76862745099999996" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Full Circle">
+                                    <color key="titleColor" red="0.078431372550000003" green="0.15686274510000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fullCircleButtonSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CZd-BF-JvD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIA-BG-7xj">
+                                <rect key="frame" x="64" y="366" width="247" height="30"/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.16078431372549018" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Quarter Circle">
+                                    <color key="titleColor" red="0.078431372550000003" green="0.15686274510000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="quarterCircleButtonSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tOf-uk-9Tv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a product of ZenBanana LLP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVs-Jt-cyO">
+                                <rect key="frame" x="73" y="630" width="229" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.078431372550000003" green="0.15686274510000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Egq-lx-tw3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="AxZ-gE-vTD"/>
+                            <constraint firstItem="myU-Ch-iab" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="CYD-Vg-6or"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="myU-Ch-iab" secondAttribute="trailing" constant="64" id="Ocn-ix-TTy"/>
+                            <constraint firstItem="vpO-LX-nko" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Pdg-Nm-NMz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Egq-lx-tw3" secondAttribute="trailing" constant="64" id="Q3Y-a6-goq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SVs-Jt-cyO" secondAttribute="bottom" constant="20" id="QTa-Rn-kAI"/>
+                            <constraint firstItem="ZlU-Vt-hqG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="VIC-OK-MEc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WIA-BG-7xj" secondAttribute="trailing" constant="64" id="YQA-T8-mCj"/>
+                            <constraint firstItem="WIA-BG-7xj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="axw-vO-j8P"/>
+                            <constraint firstItem="ZlU-Vt-hqG" firstAttribute="top" secondItem="vpO-LX-nko" secondAttribute="bottom" constant="8" id="baX-L7-HE9"/>
+                            <constraint firstItem="myU-Ch-iab" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="dj0-va-CGg"/>
+                            <constraint firstItem="vpO-LX-nko" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="hRx-Ji-hg0"/>
+                            <constraint firstItem="SVs-Jt-cyO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="l2z-St-P4t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZlU-Vt-hqG" secondAttribute="trailing" constant="32" id="m2e-tm-NE0"/>
+                            <constraint firstItem="WIA-BG-7xj" firstAttribute="top" secondItem="myU-Ch-iab" secondAttribute="bottom" constant="7.5" id="oou-DP-Pqn"/>
+                            <constraint firstItem="myU-Ch-iab" firstAttribute="top" secondItem="Egq-lx-tw3" secondAttribute="bottom" constant="8.5" id="tsO-RW-Nki"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="62k-Lc-0dr"/>
+                    <connections>
+                        <outlet property="fullCircleButton" destination="Egq-lx-tw3" id="Xrh-uQ-Yqv"/>
+                        <outlet property="halfCircleButton" destination="myU-Ch-iab" id="vao-Wt-zvy"/>
+                        <outlet property="quarterCircleButton" destination="WIA-BG-7xj" id="hTp-N9-aGB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="134"/>
+        </scene>
+        <!--FullCircle-->
+        <scene sceneID="zIm-cW-Pbk">
+            <objects>
+                <viewController storyboardIdentifier="FullCircle" title="FullCircle" id="2EB-VB-IMo" customClass="FullCircleViewController" customModule="ZenMenu_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mrl-hM-P5T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXF-Cv-ULf" customClass="ZenMenu" customModule="ZenMenu">
+                                <rect key="frame" x="166" y="322.5" width="42" height="42"/>
+                                <state key="normal" image="Menu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="openMenuIcon" value="Menu"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="closeMenuIcon" value="Menu"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLI-17-69r">
+                                <rect key="frame" x="32" y="593" width="44" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Ar5-a2-bM3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.13725490196078433" green="0.56862745098039214" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonSelected:" destination="2EB-VB-IMo" eventType="touchUpInside" id="INU-vq-aSk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Circle Menu Demonstration" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNH-dX-3Xs">
+                                <rect key="frame" x="64" y="84" width="247" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.078431372550000003" green="0.15686274510000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This view demonstrates a Full Circle type of ZenMenu with ZenMenuItems initialized with a Custom View. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APX-X0-UU6">
+                                <rect key="frame" x="32" y="157" width="311" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.078431372550000003" green="0.15686274510000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iXF-Cv-ULf" firstAttribute="centerY" secondItem="zrO-OS-YYD" secondAttribute="centerY" id="0vC-ni-9Mz"/>
+                            <constraint firstItem="iXF-Cv-ULf" firstAttribute="centerX" secondItem="zrO-OS-YYD" secondAttribute="centerX" id="En3-Gq-5CU"/>
+                            <constraint firstItem="cLI-17-69r" firstAttribute="leading" secondItem="zrO-OS-YYD" secondAttribute="leading" constant="32" id="Fdr-5C-681"/>
+                            <constraint firstItem="DNH-dX-3Xs" firstAttribute="top" secondItem="zrO-OS-YYD" secondAttribute="top" constant="64" id="KR0-uw-2Tr"/>
+                            <constraint firstItem="zrO-OS-YYD" firstAttribute="trailing" secondItem="APX-X0-UU6" secondAttribute="trailing" constant="32" id="Uhh-pR-sFk"/>
+                            <constraint firstItem="APX-X0-UU6" firstAttribute="top" secondItem="DNH-dX-3Xs" secondAttribute="bottom" constant="32" id="dDU-qP-T9J"/>
+                            <constraint firstItem="zrO-OS-YYD" firstAttribute="bottom" secondItem="cLI-17-69r" secondAttribute="bottom" constant="32" id="hML-k4-irc"/>
+                            <constraint firstItem="DNH-dX-3Xs" firstAttribute="leading" secondItem="zrO-OS-YYD" secondAttribute="leading" constant="64" id="ms4-pp-0hR"/>
+                            <constraint firstItem="APX-X0-UU6" firstAttribute="leading" secondItem="zrO-OS-YYD" secondAttribute="leading" constant="32" id="qU5-t1-b65"/>
+                            <constraint firstItem="zrO-OS-YYD" firstAttribute="trailing" secondItem="DNH-dX-3Xs" secondAttribute="trailing" constant="64" id="w32-Qs-tny"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zrO-OS-YYD"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="cLI-17-69r" id="YOc-gK-f0h"/>
+                        <outlet property="menuButton" destination="iXF-Cv-ULf" id="3gh-qP-ffT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0aT-fw-01r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885.60000000000002" y="-538.38080959520244"/>
+        </scene>
+        <!--HalfCircle-->
+        <scene sceneID="Mrj-DL-utM">
+            <objects>
+                <viewController storyboardIdentifier="HalfCircle" title="HalfCircle" id="DSX-4N-lhT" customClass="HalfCircleViewController" customModule="ZenMenu_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fAJ-Le-UCG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXw-LT-okq" customClass="ZenMenu" customModule="ZenMenu">
+                                <rect key="frame" x="166" y="593" width="42" height="42"/>
+                                <state key="normal" image="Menu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="openMenuIcon" value="Menu"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="closeMenuIcon" value="Menu"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SS9-Op-QLC">
+                                <rect key="frame" x="32" y="593" width="44" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="zMZ-yq-XEL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.13725490200000001" green="0.56862745100000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonSelected:" destination="DSX-4N-lhT" eventType="touchUpInside" id="mlB-Bb-23m"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Half Circle Menu Demonstration" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHf-qG-cGw">
+                                <rect key="frame" x="64" y="84" width="247" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.078431372550000003" green="0.15686274510000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This view demonstrates a Half Circle type of ZenMenu with ZenMenuItems initialized with UIImages. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSA-gn-BFU">
+                                <rect key="frame" x="32" y="157" width="311" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.078431372550000003" green="0.15686274510000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j1e-eM-Sgu" firstAttribute="bottom" secondItem="GXw-LT-okq" secondAttribute="bottom" constant="32" id="2FQ-bf-1zc"/>
+                            <constraint firstItem="RSA-gn-BFU" firstAttribute="leading" secondItem="j1e-eM-Sgu" secondAttribute="leading" constant="32" id="4YQ-GB-38j"/>
+                            <constraint firstItem="RSA-gn-BFU" firstAttribute="top" secondItem="UHf-qG-cGw" secondAttribute="bottom" constant="32" id="FcK-A4-RNf"/>
+                            <constraint firstItem="UHf-qG-cGw" firstAttribute="leading" secondItem="j1e-eM-Sgu" secondAttribute="leading" constant="64" id="Kvs-gL-gbw"/>
+                            <constraint firstItem="SS9-Op-QLC" firstAttribute="leading" secondItem="j1e-eM-Sgu" secondAttribute="leading" constant="32" id="SYV-w5-P4m"/>
+                            <constraint firstItem="GXw-LT-okq" firstAttribute="centerX" secondItem="j1e-eM-Sgu" secondAttribute="centerX" id="a9D-BO-4N7"/>
+                            <constraint firstItem="UHf-qG-cGw" firstAttribute="top" secondItem="j1e-eM-Sgu" secondAttribute="top" constant="64" id="lUk-83-jZ0"/>
+                            <constraint firstItem="j1e-eM-Sgu" firstAttribute="trailing" secondItem="RSA-gn-BFU" secondAttribute="trailing" constant="32" id="vVK-6a-iRn"/>
+                            <constraint firstItem="j1e-eM-Sgu" firstAttribute="trailing" secondItem="UHf-qG-cGw" secondAttribute="trailing" constant="64" id="zF5-Qg-271"/>
+                            <constraint firstItem="j1e-eM-Sgu" firstAttribute="bottom" secondItem="SS9-Op-QLC" secondAttribute="bottom" constant="32" id="zya-aD-W83"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="j1e-eM-Sgu"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="SS9-Op-QLC" id="44q-qb-yQX"/>
+                        <outlet property="menuButton" destination="GXw-LT-okq" id="otA-xP-iWt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PXC-Ha-jop" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="887" y="134"/>
+        </scene>
+        <!--QuarterCircle-->
+        <scene sceneID="a7h-or-2Ci">
+            <objects>
+                <viewController storyboardIdentifier="QuarterCircle" title="QuarterCircle" id="Ep9-Hc-02n" customClass="QuarterCircleViewController" customModule="ZenMenu_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hZn-Hw-aqX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTu-EI-C14" customClass="ZenMenu" customModule="ZenMenu">
+                                <rect key="frame" x="301" y="593" width="42" height="42"/>
+                                <state key="normal" image="Menu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="openMenuIcon" value="Menu"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="closeMenuIcon" value="Menu"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmP-eT-sXe">
+                                <rect key="frame" x="32" y="593" width="44" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="bt8-sd-Qoe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.13725490200000001" green="0.56862745100000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonSelected:" destination="Ep9-Hc-02n" eventType="touchUpInside" id="LNb-87-CnK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quarter Circle Menu Demonstration" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxj-mj-qPl">
+                                <rect key="frame" x="64" y="84" width="247" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.078431372550000003" green="0.15686274510000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This view demonstrates a Quarter Circle type of ZenMenu with ZenMenuItems initialized with Strings. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Udi-RB-XW0">
+                                <rect key="frame" x="32" y="157" width="311" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.078431372550000003" green="0.15686274510000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xcg-se-blr" firstAttribute="bottom" secondItem="HmP-eT-sXe" secondAttribute="bottom" constant="32" id="7DX-a6-d6h"/>
+                            <constraint firstItem="Xcg-se-blr" firstAttribute="trailing" secondItem="Udi-RB-XW0" secondAttribute="trailing" constant="32" id="CmL-g4-20J"/>
+                            <constraint firstItem="Xcg-se-blr" firstAttribute="trailing" secondItem="yxj-mj-qPl" secondAttribute="trailing" constant="64" id="DGo-IG-yN8"/>
+                            <constraint firstItem="HmP-eT-sXe" firstAttribute="leading" secondItem="Xcg-se-blr" secondAttribute="leading" constant="32" id="NJi-2J-5hi"/>
+                            <constraint firstItem="Xcg-se-blr" firstAttribute="bottom" secondItem="eTu-EI-C14" secondAttribute="bottom" constant="32" id="NX2-yv-O6U"/>
+                            <constraint firstItem="Udi-RB-XW0" firstAttribute="leading" secondItem="Xcg-se-blr" secondAttribute="leading" constant="32" id="U90-vk-Z9w"/>
+                            <constraint firstItem="yxj-mj-qPl" firstAttribute="leading" secondItem="Xcg-se-blr" secondAttribute="leading" constant="64" id="bG4-JK-wgB"/>
+                            <constraint firstItem="Xcg-se-blr" firstAttribute="trailing" secondItem="eTu-EI-C14" secondAttribute="trailing" constant="32" id="bp4-5O-cV0"/>
+                            <constraint firstItem="yxj-mj-qPl" firstAttribute="top" secondItem="Xcg-se-blr" secondAttribute="top" constant="64" id="mMr-5P-LGo"/>
+                            <constraint firstItem="Udi-RB-XW0" firstAttribute="top" secondItem="yxj-mj-qPl" secondAttribute="bottom" constant="32" id="mR4-uo-T8y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xcg-se-blr"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="HmP-eT-sXe" id="W4D-9B-uLd"/>
+                        <outlet property="menuButton" destination="eTu-EI-C14" id="Orl-re-A3w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vTH-e0-cLZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="807"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Menu" width="42" height="42"/>
+    </resources>
+</document>

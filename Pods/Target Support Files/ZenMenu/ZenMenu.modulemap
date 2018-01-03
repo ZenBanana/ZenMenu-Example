@@ -1,0 +1,6 @@
+framework module ZenMenu {
+  umbrella header "ZenMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}
