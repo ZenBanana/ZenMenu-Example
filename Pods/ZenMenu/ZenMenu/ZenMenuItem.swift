@@ -43,10 +43,9 @@ open class ZenMenuItem: UIView {
         
         self.addSubview(titleLabel)
     }
-
     
     /**
-     Initializes and Returns a ZenMenuItem object that only has an image
+     Initializes and Returns a ZenMenuItem object that only has asn image
      
      parameter frame:           The frame of the item
      parameter icon:            The image for the item

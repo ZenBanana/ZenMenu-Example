@@ -1,11 +1,11 @@
 PODS:
-  - ZenMenu (1.0.0)
+  - ZenMenu (1.1.0)
 
 DEPENDENCIES:
   - ZenMenu
 
 SPEC CHECKSUMS:
-  ZenMenu: 2f7a1f14b344e3a86166acd99610d90db348a51b
+  ZenMenu: f6e337cb496c820c6bdb491fd08be43dd179195c
 
 PODFILE CHECKSUM: 177744c149bfd4f9862f4d9e1cbd38e09cdfc4db
 
