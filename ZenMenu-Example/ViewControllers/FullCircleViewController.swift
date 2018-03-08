@@ -69,7 +69,6 @@ class FullCircleViewController: UIViewController {
         
         
         // MARK: Finish initialization of ZenMenu
-        
         menuButton.commonInit()
         
         
@@ -123,6 +122,5 @@ extension FullCircleViewController: ZenMenuDelegate {
             
         }
     }
-    
     
 }
